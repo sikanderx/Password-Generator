@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Password Generator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 p-4 m-5 border">
+				<form action="#" method="post" id="generatorForm">
+					<h3 class="text-center" style="color: #0CB1C3;">Password Generator</h3>
+					<div class="form-group">
+						<input type="text" name="result" id="result" class="form-control" value="" readonly>
+					</div>
+					<hr>
+					<h5>Options</h5>
+					<div class="checkbox">
+						<label for="lower">
+							<input type="checkbox" name="lower" id="lower" checked> Lowercase
+						</label>
+						<br>
+						<label for="upper">
+							<input type="checkbox" name="upper" id="upper" checked> Uppercase
+						</label>
+						<br>
+						<label for="digits">
+							<input type="checkbox" name="digits" id="digits" checked> Numbers
+						</label>
+						<br>
+						<label for="special">
+							<input type="checkbox" name="special" id="special" checked> Special Characters
+						</label>
+					</div>
+					<br>
+					<h5>Number of Characters</h5>
+					<div class="form-group">
+						<input type="number" name="number" id="number" class="form-control" value="8">
+					</div>
+					<hr>
+					<div class="text-center">
+						<button type="submit" class="btn btn-danger">Generate</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
